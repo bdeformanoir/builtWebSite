@@ -19,11 +19,13 @@ nav {
     align-items: center;
     padding: 0 20px;
     z-index: 1000;
+    height: 70px;
 }
 
 
 .logo img {
-    height: 50px; /* Ajuste la taille du logo selon tes besoins */
+    height: 30px; /* Ajuste la taille du logo selon tes besoins */
+    width: auto;
 }
 
 .nav-links {
