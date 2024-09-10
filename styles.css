@@ -97,7 +97,7 @@ nav {
 }
 
 .large-logo {
-    max-width: 100%; /* Assure que le logo est responsive */
+    max-width: 40%; /* Assure que le logo est responsive */
     height: auto; /* Maintient les proportions du logo */
     max-height: 300px; /* Limite la hauteur maximale du logo pour éviter qu'il ne devienne trop grand */
 }
