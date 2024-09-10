@@ -105,9 +105,45 @@ nav {
     max-height: 300px; /* Limite la hauteur maximale du logo pour éviter qu'il ne devienne trop grand */
 }
 
+/* Styles pour la section Notre offre */
 .offre {
-    background-color: #444;
+    background-color: #444; /* Couleur de fond de la section */
+    color: #fff; /* Couleur du texte */
+    padding: 40px 20px; /* Padding pour la section */
 }
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les cadres horizontalement */
+    gap: 20px; /* Espace entre les cadres */
+}
+
+.offer-card {
+    background: none; /* Pas de fond */
+    border: 2px solid #fff; /* Bordure blanche */
+    border-radius: 15px; /* Coins arrondis */
+    width: 23%; /* Largeur des cadres, ajustée pour l'espace */
+    padding: 20px; /* Padding interne */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    text-align: center; /* Centre le texte à l'intérieur des cadres */
+}
+
+.offer-card h3 {
+    margin: 0 0 10px 0; /* Espace sous le titre */
+    font-size: 1.5rem; /* Taille du titre */
+}
+
+.offer-card ul {
+    list-style-type: disc; /* Style des puces */
+    padding-left: 20px; /* Espace à gauche pour les puces */
+    text-align: left; /* Aligne le texte à gauche dans la liste */
+}
+
+.offer-card li {
+    margin-bottom: 10px; /* Espace sous chaque élément de la liste */
+}
+
 
 .qui-sommes-nous {
     background-color: #555;
