@@ -75,7 +75,7 @@ nav {
 .contact-container {
     display: flex;
     flex-direction: row; /* Assure une disposition en ligne */
-    padding: 40px;
+    /*padding: 40px;*/
     gap: 20px; /* Ajoute de l'espace entre le texte et le formulaire */
 }
 
