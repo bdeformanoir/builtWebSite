@@ -176,7 +176,9 @@ nav {
     margin-bottom: 10px; /* Espace sous chaque élément de la liste */
 }
 
-
+.qui-sommes-nous {
+    background-color: #555;
+}
 /* Style général de la section */
 .qui-sommes-nous-content {
     display: flex;
