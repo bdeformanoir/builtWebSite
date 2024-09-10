@@ -177,8 +177,84 @@ nav {
 }
 
 
-.qui-sommes-nous {
-    background-color: #555;
+/* Style général de la section */
+.qui-sommes-nous-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Occuper toute la hauteur de la fenêtre */
+    padding: 0 40px; /* Ajoute du padding à gauche et à droite */
+    color: #fff; /* Texte blanc */
+}
+
+/* Partie gauche : Citation et texte */
+.qui-sommes-nous-texte {
+    flex: 1;
+    padding-right: 40px; /* Espace entre le texte et les photos */
+    text-align: left; /* Aligner à gauche */
+}
+
+blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    border-left: 5px solid #fff;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.citation-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ccc; /* Texte légèrement plus clair */
+}
+
+/* Partie droite : Photos en rond avec légendes */
+.qui-sommes-nous-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    height: 100%; /* Les photos occupent toute la hauteur */
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.photo-rounded {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Assure que l'image reste bien ajustée */
+    border: 3px solid #fff; /* Bordure blanche autour des photos */
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff; /* Texte blanc pour la légende */
+}
+
+/* Responsive pour plus petits écrans */
+@media screen and (max-width: 768px) {
+    .qui-sommes-nous-content {
+        flex-direction: column; /* Empile le texte et les photos sur les petits écrans */
+    }
+
+    .qui-sommes-nous-texte {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .qui-sommes-nous-photos {
+        flex-direction: row; /* Affiche les photos côte à côte */
+    }
+
+    .photo-rounded {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .contact-container {
