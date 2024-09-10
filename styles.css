@@ -94,7 +94,9 @@ nav {
     align-items: center;
     justify-content: center;
     flex: 1;
-    margin-left: 300px; /* Ajoute de l'espace entre le texte et le logo */
+    margin-left: 100px; /* Ajoute de l'espace entre le texte et le logo */
+    margi-right: 0;
+    padding: 0;
 }
 
 .large-logo {
