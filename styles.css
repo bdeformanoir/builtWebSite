@@ -119,6 +119,12 @@ nav {
     gap: 20px; /* Espace entre les cadres */
 }
 
+.offer-title {
+    font-size: 2rem; /* Taille du titre */
+    margin-bottom: 30px; /* Espace sous le titre */
+    color: #fff; /* Couleur du texte en blanc */
+}
+
 .offer-card {
     background: none; /* Pas de fond */
     border: 2px solid #fff; /* Bordure blanche */
