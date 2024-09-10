@@ -118,6 +118,7 @@ nav {
     border-radius: 4px;
     font-size: 1rem;
     background-color: #f9f9f9;
+    color: #000; /* Définit la couleur du texte */
     width: 100%;
 }
 
