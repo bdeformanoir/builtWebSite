@@ -74,15 +74,16 @@ nav {
 
 .contact-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row; /* Assure une disposition en ligne */
     padding: 40px;
+    gap: 20px; /* Ajoute de l'espace entre le texte et le formulaire */
 }
 
 .contact-header {
     flex: 1;
-    margin-left: 10px;
-    margin-right: 40px
+    padding-left: 0; /* Assure que le padding gauche est nul */
+    margin-left: 0; /* Assure que la marge gauche est nulle */
+    margin-right: 20px; /* Ajoute un espace entre le texte et le formulaire */
 }
 
 .contact-header h2 {
