@@ -111,6 +111,12 @@ nav {
     padding-right: 10px;
 }
 
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000; /* Couleur du texte des labels en noir */
+}
+
 .form-group input, 
 .form-group textarea {
     padding: 10px;
@@ -124,7 +130,8 @@ nav {
 
 .form-group input::placeholder, 
 .form-group textarea::placeholder {
-    color: #999; /* Couleur du texte de remplacement (placeholder) */
+    color: transparent; /* Rendre le texte du placeholder invisible */
+    /*color: #999; /* Couleur du texte de remplacement (placeholder) */
 }
 
 .form-group label {
