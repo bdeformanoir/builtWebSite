@@ -120,7 +120,11 @@ nav {
 
 /* Ajustement de la largeur des champs dans .form-row */
 .form-row .form-group:first-child {
-    width: 48%; /* Largeur du premier champ, ajustée pour éviter le chevauchement */
+    width: 40%; /* Largeur du premier champ, ajustée pour éviter le chevauchement */
+}
+
+.form-row .form-group:last-child {
+    width: 40%; /* Largeur du deuxième champ, ajustée pour éviter le chevauchement */
 }
 
 .form-group input, 
