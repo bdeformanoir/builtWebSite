@@ -114,7 +114,8 @@ nav {
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #000; /* Couleur du texte des labels en noir */
+    color: #888; /* Couleur des labels en gris */
+    text-align: left; /* Aligner les labels à gauche */
 }
 
 .form-group input, 
