@@ -77,7 +77,7 @@ nav {
 }
 
 .intro-text {
-    max-width: 50%; /* Limite la largeur du texte pour permettre de l'espace au logo */
+    max-width: 40%; /* Limite la largeur du texte pour permettre de l'espace au logo */
 }
 
 .intro-text h1 {
