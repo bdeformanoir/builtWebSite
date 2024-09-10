@@ -81,6 +81,8 @@ nav {
 
 .contact-header {
     flex: 1;
+    margin-left: 40px;
+    margin-right: 40px
 }
 
 .contact-header h2 {
