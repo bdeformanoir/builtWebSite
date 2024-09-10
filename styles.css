@@ -118,6 +118,11 @@ nav {
     text-align: left; /* Aligner les labels à gauche */
 }
 
+/* Ajustement de la largeur des champs dans .form-row */
+.form-row .form-group:first-child {
+    width: 48%; /* Largeur du premier champ, ajustée pour éviter le chevauchement */
+}
+
 .form-group input, 
 .form-group textarea {
     padding: 10px;
