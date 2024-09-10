@@ -17,13 +17,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2px;
+    padding: 0 20px;
     z-index: 1000;
 }
 
 
 .logo img {
-    height: 50px; /* Ajuste la taille du logo selon tes besoins */
+    height: 30px; /* Ajuste la taille du logo selon tes besoins */
 }
 
 .nav-links {
