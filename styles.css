@@ -79,6 +79,7 @@ nav {
     display: flex;
     flex-direction: row; /* Assure une disposition en ligne */
     /*padding: 40px;*/
+    margin-top: 50px; /* Ajoute de l'espace au-dessus du conteneur */
     gap: 40px; /* Ajoute de l'espace entre le texte et le formulaire */
 }
 
