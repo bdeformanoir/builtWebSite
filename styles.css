@@ -20,9 +20,9 @@ nav {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+
+.logo img {
+    height: 50px; /* Ajuste la taille du logo selon tes besoins */
 }
 
 .nav-links {
