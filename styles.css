@@ -214,14 +214,17 @@ blockquote {
 .qui-sommes-nous-photos {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Ajuste les photos pour être centrées verticalement */
     align-items: center;
     flex: 1;
     height: 100%; /* Les photos occupent toute la hauteur */
+    height: 100%;
+    padding: 20px 0; /* Ajoute un padding en haut et en bas pour créer une marge */
 }
 
 .photo-item {
     text-align: center;
+    margin-bottom: 40px; /* Espace entre les deux photos */
 }
 
 .photo-rounded {
