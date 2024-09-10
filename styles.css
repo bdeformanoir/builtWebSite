@@ -105,6 +105,25 @@ nav {
     max-height: 300px; /* Limite la hauteur maximale du logo pour éviter qu'il ne devienne trop grand */
 }
 
+/* Style du bouton */
+.btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff; /* Bordure blanche */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Retire le soulignement */
+    font-size: 1.2rem; /* Taille du texte */
+    border-radius: 50px; /* Coins complètement arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation pour le hover */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+}
+
+/* Effet au survol */
+.btn-project:hover {
+    background-color: #fff; /* Remplissage blanc au survol */
+    color: #000; /* Change la couleur du texte en noir */
+}
+
 /* Styles pour la section Notre offre */
 .offre {
     background-color: #444; /* Couleur de fond de la section */
