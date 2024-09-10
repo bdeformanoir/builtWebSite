@@ -123,7 +123,7 @@ nav {
     background: none; /* Pas de fond */
     border: 2px solid #fff; /* Bordure blanche */
     border-radius: 15px; /* Coins arrondis */
-    width: 20%; /* Largeur des cadres, ajustée pour l'espace */
+    width: 22%; /* Largeur des cadres, ajustée pour l'espace */
     padding: 20px; /* Padding interne */
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
     text-align: center; /* Centre le texte à l'intérieur des cadres */
