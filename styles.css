@@ -117,6 +117,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center; /* Centre les cadres horizontalement */
     gap: 20px; /* Espace entre les cadres */
+    margin-top: 20px; /* Espace au-dessus des cadres pour ne pas toucher le titre */
 }
 
 .offer-title {
