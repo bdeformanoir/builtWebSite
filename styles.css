@@ -101,7 +101,7 @@ nav {
 .form-row {
     display: flex;
     justify-content: space-between;
-    gap: 10px; /* Ajoute un espace entre les champs pour éviter le chevauchement */
+    gap: 20px; /* Ajoute un espace entre les champs pour éviter le chevauchement */
 }
 
 .form-group {
