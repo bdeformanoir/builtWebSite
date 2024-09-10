@@ -61,6 +61,8 @@ nav {
     padding: 0 20px; /* Ajoute un peu de padding sur les côtés pour ne pas toucher les bords */
 }
 
+
+
 .introduction {
     background-color: #333;
 }
@@ -81,7 +83,8 @@ nav {
 }
 
 .contact-header {
-    flex: 1;
+    flex: 2;
+    max-width: 600px; /* Limite la largeur maximale du texte pour éviter qu'il ne soit trop large */
     padding-left: 0; /* Assure que le padding gauche est nul */
     margin-left: 0; /* Assure que la marge gauche est nulle */
     margin-right: 20px; /* Ajoute un espace entre le texte et le formulaire */
@@ -89,7 +92,6 @@ nav {
 
 .contact-header h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
     color: #333;
     text-align: left;
     margin-left: 0; /* Assurez-vous que le texte commence à gauche */
