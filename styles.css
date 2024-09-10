@@ -109,7 +109,11 @@ nav {
 .offre {
     background-color: #444; /* Couleur de fond de la section */
     color: #fff; /* Couleur du texte */
-    padding: 40px 20px; /* Padding pour la section */
+    padding: 10px 20px; /* Padding pour la section */
+    display: flex;
+    flex-direction: column; /* Disposition en colonne pour les éléments internes */
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espace entre le titre et les cadres */
 }
 
 .offer-container {
