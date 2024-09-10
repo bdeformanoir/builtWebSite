@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2 px;
+    padding: 0 2px;
     z-index: 1000;
 }
 
@@ -30,6 +30,7 @@ nav {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 40px; /* Décalage vers la gauche */
 }
 
 .nav-links li {
