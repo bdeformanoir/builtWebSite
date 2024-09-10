@@ -23,7 +23,7 @@ nav {
 
 
 .logo img {
-    height: 30px; /* Ajuste la taille du logo selon tes besoins */
+    height: 50px; /* Ajuste la taille du logo selon tes besoins */
 }
 
 .nav-links {
@@ -31,7 +31,7 @@ nav {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-right: 40px; /* Décalage vers la gauche */
+    margin-right: 50px; /* Décalage vers la gauche */
 }
 
 .nav-links li {
