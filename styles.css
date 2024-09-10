@@ -116,6 +116,13 @@ nav {
     gap: 20px; /* Espace entre le titre et les cadres */
 }
 
+.offer-title {
+    font-size: 2rem; /* Taille du titre */
+    margin-top: 50px;
+    margin-bottom: 20px; /* Espace sous le titre */
+    color: #fff; /* Couleur du texte en blanc */
+}
+
 .offer-container {
     display: flex;
     flex-wrap: wrap;
@@ -124,11 +131,6 @@ nav {
     margin-top: 20px; /* Espace au-dessus des cadres pour ne pas toucher le titre */
 }
 
-.offer-title {
-    font-size: 2rem; /* Taille du titre */
-    margin-bottom: 30px; /* Espace sous le titre */
-    color: #fff; /* Couleur du texte en blanc */
-}
 
 .offer-card {
     background: none; /* Pas de fond */
