@@ -220,11 +220,12 @@ blockquote {
     height: 100%; /* Les photos occupent toute la hauteur */
     height: 100%;
     padding: 20px 0; /* Ajoute un padding en haut et en bas pour créer une marge */
+    margin-top: 40px;
 }
 
 .photo-item {
     text-align: center;
-    margin-bottom: 40px; /* Espace entre les deux photos */
+    margin-bottom: 10px; /* Espace entre les deux photos */
 }
 
 .photo-rounded {
