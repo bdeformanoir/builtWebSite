@@ -64,7 +64,42 @@ nav {
 
 
 .introduction {
-    background-color: #333;
+    background-color: #333; /* Couleur de fond de la section */
+    color: #fff; /* Couleur du texte */
+    padding: 0 40px; /* Padding des côtés */
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between; /* Aligne le texte à gauche et le logo à droite */
+    align-items: center;
+    height: 100%; /* Remplit toute la hauteur de la section */
+}
+
+.intro-text {
+    max-width: 50%; /* Limite la largeur du texte pour permettre de l'espace au logo */
+}
+
+.intro-text h1 {
+    font-size: 4rem; /* Taille du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.intro-text p {
+    font-size: 1.5rem; /* Taille du sous-titre */
+}
+
+.intro-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.large-logo {
+    max-width: 100%; /* Assure que le logo est responsive */
+    height: auto; /* Maintient les proportions du logo */
+    max-height: 400px; /* Limite la hauteur maximale du logo pour éviter qu'il ne devienne trop grand */
 }
 
 .offre {
