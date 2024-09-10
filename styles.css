@@ -122,6 +122,11 @@ nav {
     width: 100%;
 }
 
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: #999; /* Couleur du texte de remplacement (placeholder) */
+}
+
 .form-group label {
     margin-bottom: 5px;
     font-weight: bold;
