@@ -297,26 +297,7 @@ blockquote {
     color: #fff; /* Texte blanc pour la légende */
 }
 
-/* Responsive pour plus petits écrans */
-@media screen and (max-width: 768px) {
-    .qui-sommes-nous-content {
-        flex-direction: column; /* Empile le texte et les photos sur les petits écrans */
-    }
 
-    .qui-sommes-nous-texte {
-        padding-right: 0;
-        margin-bottom: 40px;
-    }
-
-    .qui-sommes-nous-photos {
-        flex-direction: row; /* Affiche les photos côte à côte */
-    }
-
-    .photo-rounded {
-        width: 150px;
-        height: 150px;
-    }
-}
 
 .contact-container {
     display: flex;
@@ -422,3 +403,4 @@ textarea {
 .submit-btn:hover {
     background-color: #444;
 }
+
