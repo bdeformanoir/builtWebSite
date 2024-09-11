@@ -457,9 +457,7 @@ textarea {
     .intro-logo {
         margin-top: 20px; /* Espace au-dessus du logo */
         width: 100%; /* Utiliser 100% de la largeur disponible */
-        align-self: flex-start; /* Aligner le logo à gauche */
-        display: flex; /* Utiliser le flex pour aligner le contenu */
-        justify-content: flex-start; /* Aligner le contenu du logo à gauche */
+        
     }
     .large-logo {
     max-width: 100%; /* Assure que le logo est responsive */
