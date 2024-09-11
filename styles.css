@@ -428,12 +428,12 @@ textarea {
     }
 
     /* Pour la section Introduction */
-    .introduction-content {
+    .intro-content {
         flex-direction: column; /* Le texte et le logo seront empilés verticalement */
         text-align: center; /* Centrer le texte */
     }
 
-    .introduction-content img {
+    .intro-logo {
         margin-top: 20px; /* Espace au-dessus du logo */
         width: 150px; /* Réduire la taille du logo */
     }
