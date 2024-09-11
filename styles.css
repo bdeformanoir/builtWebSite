@@ -457,7 +457,8 @@ textarea {
     .intro-logo {
         margin-top: 20px; /* Espace au-dessus du logo */
         width: 100%; /* Utiliser 100% de la largeur disponible */
-        margin-right:60px
+        margin-right:80px;
+        margin-bottom:100px
         
     }
     .large-logo {
