@@ -29,6 +29,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     height: 20px;
+    margin-right: 50px; /* Décalage vers la gauche */
 }
 .hamburger span {
     display: block;
