@@ -467,6 +467,9 @@ textarea {
     
     }
 
+    .offre{
+        overflow-y: auto; /* Permet le défilement vertical si nécessaire */
+    }
     .offer-title {
     font-size: 1.5rem; /* Taille du titre */
     margin-top: 10px;
