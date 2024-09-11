@@ -477,6 +477,17 @@ textarea {
         width: 100%; /* Chaque cadre occupe toute la largeur */
     }
 
+    /* Style général de la section */
+    .qui-sommes-nous-content {
+        display: flex;
+        flex-direction: column; /* Affiche les cadres en colonne */
+        align-items: center;
+        height: 100vh; /* Occuper toute la hauteur de la fenêtre */
+        padding: 0 40px; /* Ajoute du padding à gauche et à droite */
+        color: #fff; /* Texte blanc */
+    }
+
+
     /* Contact form */
     .contact-container {
         flex-direction: column; /* Aligner le texte et le formulaire en colonne */
