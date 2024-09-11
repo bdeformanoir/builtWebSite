@@ -486,6 +486,17 @@ textarea {
         padding: 0 40px; /* Ajoute du padding à gauche et à droite */
         color: #fff; /* Texte blanc */
     }
+    /* Partie droite : Photos en rond avec légendes */
+    .qui-sommes-nous-photos {
+        display: flex;
+        justify-content: space-between; /* Ajuste les photos pour être centrées verticalement */
+        align-items: center;
+        flex: 1;
+        height: 100%; /* Les photos occupent toute la hauteur */
+        height: 100%;
+        padding: 20px 0; /* Ajoute un padding en haut et en bas pour créer une marge */
+        margin-top: 40px;
+    }
 
 
     /* Contact form */
