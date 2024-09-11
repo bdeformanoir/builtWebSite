@@ -4,7 +4,6 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
-    overflow-x: hidden; /* Éviter le débordement horizontal */
 }
 
 /* Styles pour la barre de navigation */
@@ -23,288 +22,403 @@ nav {
     height: 70px;
 }
 
+/* Menu hamburger (les trois lignes) */
+.hamburger {
+    display: none; /* Caché sur les grands écrans */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
 .logo img {
-    height: 60px;
+    height: 30px; /* Ajuste la taille du logo selon tes besoins */
     width: auto;
 }
 
-/* Menu hamburger */
-.hamburger {
-    display: none; /* Cacher par défaut */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 4px 0;
-}
-
-/* Liens de navigation */
 .nav-links {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 50px; /* Décalage vers la gauche */
 }
 
-.nav-links li {
-    padding-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #f39c12;
-}
-
-/* Section Introduction */
-.section {
-    padding: 100px 50px;
-}
-
-.introduction {
-    background-color: #333;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh;
-    text-align: left;
-}
-
-.intro-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.intro-text {
-    max-width: 500px;
-}
-
-.intro-text h1 {
-    font-size: 64px;
-    margin-bottom: 20px;
-}
-
-.intro-text p {
-    font-size: 24px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.large-logo {
-    width: 400px;
-    height: auto;
-}
-
-/* Section Offre */
-.offre {
-    text-align: center;
-    background-color: #f8f8f8;
-}
-
-.offer-title {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-.offer-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.offer-card {
-    width: 300px;
-    text-align: left;
-}
-
-.offer-card h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.offer-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.offer-card ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Section Qui Sommes Nous */
-.qui-sommes-nous-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.qui-sommes-nous-texte {
-    max-width: 600px;
-}
-
-.qui-sommes-nous-photos {
-    display: flex;
-    justify-content: space-around;
-}
-
-.photo-item {
-    text-align: center;
-}
-
-.photo-item img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-/* Section Contact */
-.contact-container {
-    text-align: center;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form .form-group {
-    margin-bottom: 20px;
-}
-
-.contact-form label {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-.contact-form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.contact-form button:hover {
-    background-color: #f39c12;
-}
-
-/* Media Queries pour les petits écrans (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Réduction de la taille du texte et des images */
-    .intro-text h1 {
-        font-size: 40px;
-    }
-
-    .intro-text p {
-        font-size: 18px;
-    }
-
-    .large-logo {
-        width: 200px;
-        margin: 20px 0;
-    }
-
-    /* Flex direction en colonne pour le contenu de l'introduction */
-    .introduction {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .intro-content {
-        align-items: center;
-    }
-
-    /* Ajustement du menu hamburger */
-    .hamburger {
-        display: flex; /* Visible sur mobile */
-    }
-
+    /* Cacher les liens de navigation sur les petits écrans */
     .nav-links {
-        display: none; /* Cacher les liens de navigation */
+        display: none;
         flex-direction: column;
-        width: 100%;
         position: absolute;
         top: 70px;
         right: 0;
-        background-color: #282828;
+        background-color: #000;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+    }
+    /* Afficher le menu hamburger */
+    .hamburger {
+        display: flex;
     }
 
+    /* Afficher le menu lorsque la classe "active" est ajoutée */
     .nav-links.active {
         display: flex;
     }
 
     .nav-links li {
-        text-align: center;
-        padding: 15px 0;
+        margin-bottom: 10px;
     }
 
-    /* Centrer le texte */
     .nav-links a {
-        font-size: 24px;
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
     }
 
-    /* Réduction des sections */
-    .section {
-        padding: 50px 20px;
+    .nav-links a:hover {
+        background-color: #444;
     }
+}
 
-    /* Ajustement de l'offre pour mobile */
-    .offer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.nav-links li {
+    margin-left: 50px;
+}
 
-    .offer-card {
-        width: 90%;
-        margin-bottom: 30px;
-    }
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
 
-    /* Ajustement de la section Qui sommes-nous pour mobile */
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-align: left;
+    padding: 0 40px; /* Ajoute un peu de padding sur les côtés pour ne pas toucher les bords */
+}
+
+
+
+.introduction {
+    background-color: #333; /* Couleur de fond de la section */
+    color: #fff; /* Couleur du texte */
+    padding: 0 40px; /* Padding des côtés */
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between; /* Aligne le texte à gauche et le logo à droite */
+    align-items: center;
+    height: 100%; /* Remplit toute la hauteur de la section */
+}
+
+.intro-text {
+    max-width: 40%; /* Limite la largeur du texte pour permettre de l'espace au logo */
+}
+
+.intro-text h1 {
+    font-size: 4rem; /* Taille du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.intro-text p {
+    font-size: 1.5rem; /* Taille du sous-titre */
+}
+
+.intro-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-left: 100px; /* Ajoute de l'espace entre le texte et le logo */
+    margi-right: 0;
+    padding: 0;
+}
+
+.large-logo {
+    max-width: 80%; /* Assure que le logo est responsive */
+    height: auto; /* Maintient les proportions du logo */
+    max-height: 300px; /* Limite la hauteur maximale du logo pour éviter qu'il ne devienne trop grand */
+}
+
+/* Style du bouton */
+.btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff; /* Bordure blanche */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Retire le soulignement */
+    font-size: 1.2rem; /* Taille du texte */
+    border-radius: 50px; /* Coins complètement arrondis */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animation pour le hover */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+}
+
+/* Effet au survol */
+.btn-project:hover {
+    background-color: #fff; /* Remplissage blanc au survol */
+    color: #000; /* Change la couleur du texte en noir */
+}
+
+/* Styles pour la section Notre offre */
+.offre {
+    background-color: #444; /* Couleur de fond de la section */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Padding pour la section */
+    display: flex;
+    flex-direction: column; /* Disposition en colonne pour les éléments internes */
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espace entre le titre et les cadres */
+}
+
+.offer-title {
+    font-size: 2rem; /* Taille du titre */
+    margin-top: 70px;
+    margin-bottom: 10px; /* Espace sous le titre */
+    color: #fff; /* Couleur du texte en blanc */
+}
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les cadres horizontalement */
+    gap: 20px; /* Espace entre les cadres */
+    margin-top: 20px; /* Espace au-dessus des cadres pour ne pas toucher le titre */
+}
+
+
+.offer-card {
+    background: none; /* Pas de fond */
+    border: 2px solid #fff; /* Bordure blanche */
+    border-radius: 15px; /* Coins arrondis */
+    width: 22%; /* Largeur des cadres, ajustée pour l'espace */
+    padding: 20px; /* Padding interne */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    text-align: center; /* Centre le texte à l'intérieur des cadres */
+}
+
+.offer-card h3 {
+    margin: 0 0 10px 0; /* Espace sous le titre */
+    font-size: 1.5rem; /* Taille du titre */
+}
+
+.offer-card ul {
+    list-style-type: disc; /* Style des puces */
+    padding-left: 20px; /* Espace à gauche pour les puces */
+    text-align: left; /* Aligne le texte à gauche dans la liste */
+}
+
+.offer-card li {
+    margin-bottom: 10px; /* Espace sous chaque élément de la liste */
+}
+
+.qui-sommes-nous {
+    background-color: #555;
+}
+/* Style général de la section */
+.qui-sommes-nous-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Occuper toute la hauteur de la fenêtre */
+    padding: 0 40px; /* Ajoute du padding à gauche et à droite */
+    color: #fff; /* Texte blanc */
+}
+
+/* Partie gauche : Citation et texte */
+.qui-sommes-nous-texte {
+    flex: 1;
+    padding-right: 40px; /* Espace entre le texte et les photos */
+    text-align: left; /* Aligner à gauche */
+}
+
+blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    border-left: 5px solid #fff;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.citation-text {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ccc; /* Texte légèrement plus clair */
+}
+
+/* Partie droite : Photos en rond avec légendes */
+.qui-sommes-nous-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ajuste les photos pour être centrées verticalement */
+    align-items: center;
+    flex: 1;
+    height: 100%; /* Les photos occupent toute la hauteur */
+    height: 100%;
+    padding: 20px 0; /* Ajoute un padding en haut et en bas pour créer une marge */
+    margin-top: 40px;
+}
+
+.photo-item {
+    text-align: center;
+    margin-bottom: 10px; /* Espace entre les deux photos */
+}
+
+.photo-rounded {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Assure que l'image reste bien ajustée */
+    border: 3px solid #fff; /* Bordure blanche autour des photos */
+}
+
+.photo-caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff; /* Texte blanc pour la légende */
+}
+
+/* Responsive pour plus petits écrans */
+@media screen and (max-width: 768px) {
     .qui-sommes-nous-content {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Empile le texte et les photos sur les petits écrans */
     }
 
     .qui-sommes-nous-texte {
-        text-align: center;
-        margin-bottom: 20px;
+        padding-right: 0;
+        margin-bottom: 40px;
     }
 
     .qui-sommes-nous-photos {
-        flex-direction: column;
+        flex-direction: row; /* Affiche les photos côte à côte */
     }
 
-    .photo-item {
-        margin-bottom: 20px;
+    .photo-rounded {
+        width: 150px;
+        height: 150px;
     }
+}
 
-    .photo-item img {
-        width: 100px;
-        height: 100px;
-    }
+.contact-container {
+    display: flex;
+    flex-direction: row; /* Assure une disposition en ligne */
+    /*padding: 40px;*/
+    margin-top: 50px; /* Ajoute de l'espace au-dessus du conteneur */
+    gap: 40px; /* Ajoute de l'espace entre le texte et le formulaire */
+}
 
-    /* Ajustement du formulaire de contact */
-    .contact-form {
-        padding: 0 20px;
-    }
+.contact-header {
+    flex: 2;
+    max-width: 600px; /* Limite la largeur maximale du texte pour éviter qu'il ne soit trop large */
+    padding-left: 0; /* Assure que le padding gauche est nul */
+    margin-left: 0; /* Assure que la marge gauche est nulle */
+    margin-right: 20px; /* Ajoute un espace entre le texte et le formulaire */
+}
+
+.contact-header h2 {
+    font-size: 3rem;
+    color: #333;
+    text-align: left;
+    margin-left: 0; /* Assurez-vous que le texte commence à gauche */
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left;
+    margin-left: 0; /* Assurez-vous que le texte commence à gauche */
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 500px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Ajoute un espace entre les champs pour éviter le chevauchement */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #888; /* Couleur des labels en gris */
+    text-align: left; /* Aligner les labels à gauche */
+}
+
+/* Ajustement de la largeur des champs dans .form-row */
+.form-row .form-group:first-child {
+    width: 40%; /* Largeur du premier champ, ajustée pour éviter le chevauchement */
+}
+
+.form-row .form-group:last-child {
+    width: 40%; /* Largeur du deuxième champ, ajustée pour éviter le chevauchement */
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #000; /* Définit la couleur du texte */
+    width: 100%;
+}
+
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    color: transparent; /* Rendre le texte du placeholder invisible */
+    /*color: #999; /* Couleur du texte de remplacement (placeholder) */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #444;
 }
