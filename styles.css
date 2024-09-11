@@ -404,3 +404,63 @@ textarea {
     background-color: #444;
 }
 
+/* Styles pour les écrans de moins de 768px (mobiles) */
+@media (max-width: 768px) {
+    /* Sections */
+    .section {
+        padding: 20px; /* Réduire le padding pour éviter que le contenu touche les bords */
+    }
+
+    /* Barre de navigation */
+    .nav-links {
+        flex-direction: column; /* Mettre les liens de navigation en colonne */
+        margin-right: 0;
+    }
+    
+    .nav-links li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Espace entre les liens */
+    }
+    
+    /* Redimensionner le logo */
+    .logo img {
+        height: 20px;
+    }
+
+    /* Pour la section Introduction */
+    .introduction-content {
+        flex-direction: column; /* Le texte et le logo seront empilés verticalement */
+        text-align: center; /* Centrer le texte */
+    }
+
+    .introduction-content img {
+        margin-top: 20px; /* Espace au-dessus du logo */
+        width: 150px; /* Réduire la taille du logo */
+    }
+
+    /* Pour la section Offre */
+    .offer-cards {
+        flex-direction: column; /* Affiche les cadres en colonne */
+        gap: 20px; /* Ajoute de l'espace entre les cadres */
+    }
+
+    .offer-card {
+        width: 100%; /* Chaque cadre occupe toute la largeur */
+    }
+
+    /* Contact form */
+    .contact-container {
+        flex-direction: column; /* Aligner le texte et le formulaire en colonne */
+    }
+
+    .contact-header, .contact-form {
+        width: 100%; /* Les éléments occupent toute la largeur */
+    }
+
+    /* Réduire la taille des champs du formulaire sur mobile */
+    .form-group input, .form-group textarea {
+        font-size: 0.9rem;
+    }
+}
+
+
