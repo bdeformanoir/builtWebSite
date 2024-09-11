@@ -477,25 +477,36 @@ textarea {
         width: 100%; /* Chaque cadre occupe toute la largeur */
     }
 
-    /* Style général de la section */
     .qui-sommes-nous-content {
-        display: flex;
-        flex-direction: column; /* Affiche les cadres en colonne */
-        align-items: center;
-        height: 100vh; /* Occuper toute la hauteur de la fenêtre */
-        padding: 0 40px; /* Ajoute du padding à gauche et à droite */
-        color: #fff; /* Texte blanc */
+        flex-direction: column; /* Empile les éléments en colonne */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        padding: 20px; /* Réduit le padding pour les petits écrans */
+        align-items: center; /* Centre les éléments horizontalement */
     }
-    /* Partie droite : Photos en rond avec légendes */
+
+    .qui-sommes-nous-texte {
+        padding-right: 0; /* Retire le padding à droite pour les petits écrans */
+        text-align: center; /* Centre le texte pour les petits écrans */
+        margin-bottom: 20px; /* Ajoute un espace sous le texte */
+    }
+
     .qui-sommes-nous-photos {
-        display: flex;
-        justify-content: space-between; /* Ajuste les photos pour être centrées verticalement */
-        align-items: center;
-        flex: 1;
-        height: 100%; /* Les photos occupent toute la hauteur */
-        height: 100%;
-        padding: 20px 0; /* Ajoute un padding en haut et en bas pour créer une marge */
-        margin-top: 40px;
+        flex-direction: row; /* Aligne les photos côte à côte */
+        justify-content: space-between; /* Espace entre les photos */
+        padding: 0; /* Retire le padding vertical */
+        margin-top: 0; /* Retire la marge supérieure */
+        width: 100%; /* Les photos occupent toute la largeur */
+    }
+
+    .photo-item {
+        margin-bottom: 0; /* Retire l'espace entre les photos */
+        flex: 1; /* Les photos occupent une largeur égale */
+        padding: 0 5px; /* Ajoute un peu de marge horizontale */
+    }
+
+    .photo-rounded {
+        width: 100%; /* Les photos occupent toute la largeur disponible */
+        height: auto; /* Ajuste la hauteur pour maintenir les proportions */
     }
 
 
