@@ -504,6 +504,7 @@ textarea {
         justify-content: space-between; /* Espace entre les photos */
         padding: 0; /* Retire le padding vertical */
         margin-top: 0; /* Retire la marge supérieure */
+        height: 100%; /* Les photos occupent toute la hauteur */
         width: 100%; /* Les photos occupent toute la largeur */
     }
 
