@@ -487,7 +487,7 @@ textarea {
     .qui-sommes-nous-texte {
         padding-right: 0; /* Retire le padding à droite pour les petits écrans */
         text-align: center; /* Centre le texte pour les petits écrans */
-        margin-bottom: 20px; /* Ajoute un espace sous le texte */
+        margin-bottom: 10px; /* Ajoute un espace sous le texte */
     }
     blockquote {
     font-size: 1.5rem;
