@@ -430,18 +430,18 @@ textarea {
     .introduction {
     background-color: #333; /* Couleur de fond de la section */
     color: #fff; /* Couleur du texte */
-    padding: 0 5px; /* Padding des côtés */
+    padding: 0 30px; /* Padding des côtés */
     }
 
 
     /* Pour la section Introduction */
     .intro-content {
         flex-direction: column; /* Le texte et le logo seront empilés verticalement */
-        text-align: center; /* Centrer le texte */
+        text-align: left; /* Centrer le texte */
     }
 
     .intro-text {
-    max-width: 40%; /* Limite la largeur du texte pour permettre de l'espace au logo */
+        max-width: 100%; /* Limite la largeur du texte pour permettre de l'espace au logo */
     }
 
     .intro-text h1 {
