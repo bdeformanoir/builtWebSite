@@ -467,6 +467,13 @@ textarea {
     
     }
 
+    .offer-title {
+    font-size: 1.5rem; /* Taille du titre */
+    margin-top: 30px;
+    margin-bottom: 10px; /* Espace sous le titre */
+    color: #fff; /* Couleur du texte en blanc */
+    }
+
     /* Pour la section Offre */
     .offer-cards {
         flex-direction: column; /* Affiche les cadres en colonne */
@@ -475,6 +482,10 @@ textarea {
 
     .offer-card {
         width: 100%; /* Chaque cadre occupe toute la largeur */
+    }
+    .offer-card h3 {
+    margin: 0 0 10px 0; /* Espace sous le titre */
+    font-size: 1rem; /* Taille du titre */
     }
 
     .qui-sommes-nous-content {
