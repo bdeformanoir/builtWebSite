@@ -438,8 +438,7 @@ textarea {
     .intro-content {
         flex-direction: column; /* Le texte et le logo seront empilés verticalement */
         text-align: left; /* Centrer le texte */
-        
-        align-items: flex-start; /* Aligner tous les éléments à gauche */
+        align-items: center;
     }
 
     .intro-text {
@@ -458,6 +457,7 @@ textarea {
     .intro-logo {
         margin-top: 20px; /* Espace au-dessus du logo */
         width: 100%; /* Utiliser 100% de la largeur disponible */
+        margin-right:60px
         
     }
     .large-logo {
