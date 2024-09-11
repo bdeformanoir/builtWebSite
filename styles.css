@@ -518,6 +518,12 @@ textarea {
         height: auto; /* Ajuste la hauteur pour maintenir les proportions */
     }
 
+    .photo-caption {
+    margin-top: 10px;
+    font-size: 0.5rem;
+    color: #fff; /* Texte blanc pour la légende */
+    }
+
 
     /* Contact form */
     .contact-container {
