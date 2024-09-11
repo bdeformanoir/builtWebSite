@@ -460,7 +460,7 @@ textarea {
         align-self: flex-start; /* Aligner le logo à gauche */
     }
     .large-logo {
-    max-width: 80%; /* Assure que le logo est responsive */
+    max-width: 100%; /* Assure que le logo est responsive */
     height: auto; /* Maintient les proportions du logo */
     
     }
