@@ -438,7 +438,8 @@ textarea {
     .intro-content {
         flex-direction: column; /* Le texte et le logo seront empilés verticalement */
         text-align: left; /* Centrer le texte */
-        align-items: center;
+        
+        align-items: flex-start; /* Aligner tous les éléments à gauche */
     }
 
     .intro-text {
